@@ -1,0 +1,126 @@
+<style>
+    /* Fügen Sie eine eindeutige Klasse für jede Animation hinzu */
+    .animated-divs.facebook-likes {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 800px;
+        height: auto;
+        opacity: 0;
+        animation: fade-in-out-1 10s infinite; /* Endlos wiederholen */
+    }
+
+    .animated-divs.facebook-reach {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 800px;
+        height: auto;
+        opacity: 0;
+        animation: fade-in-out-2 10s infinite; /* Endlos wiederholen */
+    }
+
+    .animated-divs.facebook-link-clicks {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 800px;
+        height: auto;
+        opacity: 0;
+        animation: fade-in-out-3 10s infinite; /* Endlos wiederholen */
+    }
+
+    /* Definieren Sie separate Keyframes für jede Animation */
+    @keyframes fade-in-out-1 {
+        0%, 100% {
+            opacity: 0;
+        }
+
+        10% {
+            opacity: 1; /* Einblenden für 1 Sekunde (10% von 10 Sekunden) */
+        }
+
+        90% {
+            opacity: 1; /* Halte die Anzeige für 9 Sekunden (90% von 10 Sekunden) */
+        }
+    }
+
+    @keyframes fade-in-out-2 {
+        0%, 100% {
+            opacity: 0;
+        }
+
+        10% {
+            opacity: 1; /* Einblenden für 1 Sekunde (10% von 10 Sekunden) */
+        }
+
+        90% {
+            opacity: 1; /* Halte die Anzeige für 9 Sekunden (90% von 10 Sekunden) */
+        }
+    }
+
+    @keyframes fade-in-out-3 {
+        0%, 100% {
+            opacity: 0;
+        }
+
+        10% {
+            opacity: 1; /* Einblenden für 1 Sekunde (10% von 10 Sekunden) */
+        }
+
+        90% {
+            opacity: 1; /* Halte die Anzeige für 9 Sekunden (90% von 10 Sekunden) */
+        }
+    }
+</style>
+
+<script>
+    // Funktion, um die Animation eines Elements zurückzusetzen und neu zu starten
+    function resetAndRestartAnimation(elementClass) {
+        const elements = document.querySelectorAll('.' + elementClass);
+        elements.forEach(function (element) {
+            element.style.animation = 'none';
+            setTimeout(() => {
+                element.style.animation = '';
+            }, 10);
+        });
+    }
+
+    // Funktion, um alle Animationen zurückzusetzen und neu zu starten
+    function resetAndRestartAllAnimations() {
+        resetAndRestartAnimation('facebook-likes');
+        resetAndRestartAnimation('facebook-reach');
+        resetAndRestartAnimation('facebook-link-clicks');
+
+        // Fügen Sie hier weitere Animationen hinzu, wenn Sie sie haben
+    }
+
+    // Starten Sie die Animationen, wenn die Seite geladen wird
+    window.onload = function () {
+        resetAndRestartAllAnimations();
+    };
+</script>
+</head>
+<body>
+    <!-- Ändern Sie die Klassen der div-Elemente entsprechend -->
+   
+    <div id="Facebook_Likes" class="animated-divs facebook-likes">
+        <!-- Inhalt von #Facebook_Reichweite bleibt unverändert -->
+        <div class="infogram-embed" data-id="278bed22-0581-4104-b400-37bef01665a4" data-type="interactive" data-title="Facebook Likes"></div><script>!function(e,n,i,s){var d="InfogramEmbeds";var o=e.getElementsByTagName(n)[0];if(window[d]&&window[d].initialized)window[d].process&&window[d].process();else if(!e.getElementById(i)){var r=e.createElement(n);r.async=1,r.id=i,r.src=s,o.parentNode.insertBefore(r,o)}}(document,"script","infogram-async","https://infogram.com/js/dist/embed-loader-min.js");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/278bed22-0581-4104-b400-37bef01665a4" style="color:#989898!important;text-decoration:none!important;" target="_blank">Facebook Likes</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
+    </div>
+
+
+    <div id="Facebook_Reichweite" class="animated-divs facebook-reach">
+        <!-- Inhalt von #Facebook_Reichweite bleibt unverändert -->
+        <div class="infogram-embed" data-id="0c4b6c95-81b8-4f35-afcf-2b27610a4ca6" data-type="interactive" data-title="Facebook Likes"></div><script>!function(e,n,i,s){var d="InfogramEmbeds";var o=e.getElementsByTagName(n)[0];if(window[d]&&window[d].initialized)window[d].process&&window[d].process();else if(!e.getElementById(i)){var r=e.createElement(n);r.async=1,r.id=i,r.src=s,o.parentNode.insertBefore(r,o)}}(document,"script","infogram-async","https://infogram.com/js/dist/embed-loader-min.js");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/0c4b6c95-81b8-4f35-afcf-2b27610a4ca6" style="color:#989898!important;text-decoration:none!important;" target="_blank">Facebook Likes</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
+    </div>
+
+    <div id="Facebook_Link_Clicks" class="animated-divs facebook-link-clicks">
+        <!-- Inhalt von #Facebook_Reichweite bleibt unverändert -->
+        <div class="infogram-embed" data-id="278bed22-0581-4104-b400-37bef01665a4" data-type="interactive" data-title="Facebook Likes"></div><script>!function(e,n,i,s){var d="InfogramEmbeds";var o=e.getElementsByTagName(n)[0];if(window[d]&&window[d].initialized)window[d].process&&window[d].process();else if(!e.getElementById(i)){var r=e.createElement(n);r.async=1,r.id=i,r.src=s,o.parentNode.insertBefore(r,o)}}(document,"script","infogram-async","https://infogram.com/js/dist/embed-loader-min.js");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/278bed22-0581-4104-b400-37bef01665a4" style="color:#989898!important;text-decoration:none!important;" target="_blank">Facebook Likes</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
+    </div>
+
+    <!-- Fügen Sie weitere div-Elemente hinzu und ändern Sie die Klassen entsprechend -->
+
+</body>
+
